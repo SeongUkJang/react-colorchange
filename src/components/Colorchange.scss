@@ -1,0 +1,40 @@
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color .5s ease;
+    background-color: rgb(0, 136, 255);
+
+}
+.color-code {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+.control-button {
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .2s ease;
+    background-color: #ffffffb0;
+    color: #333;
+
+    &:disabled{
+        opacity: .6;
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled){
+        background-color: #fff;
+        transform: scale(1.05);
+    }
+}
